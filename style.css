@@ -1,0 +1,230 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: rgba(0, 0, 0, 0.884);
+    /* background-image: url(""); */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* ===========================================
+Blogger Template Style
+Name:        Blogger Template
+License:     Free Version
+Version:     2.0
+Author:      AS ★ Official
+Author Url:  https://timefactsmedia.xyz/
+=============================================== */
+
+.login_form {
+    width: 380px;
+    height: 420px;
+    position: relative;
+    /* background: black; */
+    border-radius: 15px;
+    overflow: hidden;
+}
+.login_form::before {
+    content: "";
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 380px;
+    height: 420px;
+    transform-origin: bottom right;
+    background: linear-gradient(0deg, transparent, transparent, green, green, green);
+    z-index: 1;
+    animation: animate 5s linear infinite;
+    animation-delay: -0.5s;
+}
+.login_form::after {
+    content: "";
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 380px;
+    height: 420px;
+    transform-origin: bottom right;
+    background: linear-gradient(0deg, transparent, transparent, red, red, red);
+    z-index: 1;
+    animation: animate 5s linear infinite;
+    animation-delay: -3s;
+}
+
+.border_line {
+    position: absolute;
+    top: 0;
+    inset: 0;
+}
+.border_line::before {
+    content: "";
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 380px;
+    height: 420px;
+    transform-origin: bottom right;
+    background: linear-gradient(0deg, transparent, transparent, blue, blue, blue);
+    z-index: 1;
+    animation: animate 5s linear infinite;
+    animation-delay: -1.5s;
+}
+.border_line::after {
+    content: "";
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 380px;
+    height: 420px;
+    transform-origin: bottom right;
+    background: linear-gradient(0deg, transparent, transparent, #ff00bf, #ff00bf, #ff00bf);
+    z-index: 1;
+    animation: animate 5s linear infinite;
+    animation-delay: -4.05s;
+}
+@keyframes animate {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.login_form form {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    z-index: 2;
+    inset: 4px;
+    background-color: black;
+    padding: 30px 40px;
+    border-radius: 10px;
+
+}
+.fa-solid {
+    color: white;
+    text-align: center;
+    padding: ;
+    font-size: 50px;
+}
+
+.login_form form h1 {
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    letter-spacing: 0.1rem;
+}
+
+.login_input {
+    position: relative;
+    width: 300px;
+    margin-top: 30px;
+
+}
+
+.login_input input {
+    position: relative;
+    width: 100%;
+    padding: 20px 10px 10px;
+    background: transparent;
+    border: none;
+    outline: none;
+    box-shadow: none;
+    color: black;
+    font-size: 1em;
+    letter-spacing: 0.05em;
+    transition: 0.5s;
+    z-index: 10;
+}
+.login_input span {
+    position: absolute;
+    left: 0;
+    padding: 20px 10px 10px;
+    pointer-events: none;
+    color: #00fff2;
+    font-size: 1.10em;
+    transition: 0.5s;
+    letter-spacing: 0.05em;
+
+}
+
+.login_input i {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 3px;
+    border-radius: 5px;
+    background-color: white;
+}
+.login_input input:valid ~ i,
+.login_input input:focus ~ i {
+    height: 40px;
+    overflow: hidden;
+    transition: 0.5s;
+}
+
+
+.login_input input:valid ~ span,
+.login_input input:focus ~ span {
+    color: rgb(46, 236, 8);
+    font-size: 1rem;
+    transform: translateY(-35px);
+}
+
+/* Start Links Design */
+.links {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 0px;
+}
+.links a {
+    /* text-decoration: none; */
+    color: white;
+    font-size: 18px;
+}
+.links a:focus {
+    color: green;
+    
+    
+}
+
+/* Start Log In BTN Design */
+
+.login_btn {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.login_btn #loginBtn {
+    text-decoration: none;
+    color: white;
+    border: 2px solid black;
+    border-radius: 5px;
+    outline: none;
+    padding: 10px 15px;
+    font-size: 20px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    word-spacing: 2px;
+    background-color: #ff00bf;
+}
+.login_btn #loginBtn:hover {
+    background-color: green;
+}
+
+.login_btn #loginBtn:focus {
+    background-color: green;
+    box-shadow: 0px 0px 10px green;
+    border: none;
+}
+
