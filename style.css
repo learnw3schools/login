@@ -134,9 +134,10 @@ Author Url:  https://timefactsmedia.xyz/
 .login_input input {
     position: relative;
     width: 100%;
-    padding: 20px 10px 10px;
+    padding: 10px 10px 10px;
     background: transparent;
     border: none;
+    border-radius: 5px;
     outline: none;
     box-shadow: none;
     color: black;
